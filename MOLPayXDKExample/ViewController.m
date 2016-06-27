@@ -31,6 +31,7 @@
                                           @"mp_currency": @"", // Mandatory
                                           @"mp_country": @"", // Mandatory
                                           @"mp_verification_key": @"", // Mandatory
+                                          @"mp_encrypt_credentials": [NSNumber numberWithBool:YES],
                                           @"mp_channel": @"", // Optional
                                           @"mp_bill_description": @"", // Optional
                                           @"mp_bill_name": @"", // Optional
