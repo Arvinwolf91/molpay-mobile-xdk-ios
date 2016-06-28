@@ -37,9 +37,6 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_app_name": @"appname",
         @"mp_verification_key": @"vkey123",
     
-        // Encryption protects mp_username, mp_password, and mp_verification_key from revealing to the app users, it is recommended to set this to a boolean TRUE value
-        @"mp_encrypt_credentials": [NSNumber numberWithBool:YES],
-    
         // Mandatory String. Payment values
         @"mp_order_ID": @"orderid123",
         @"mp_currency": @"MYR",
