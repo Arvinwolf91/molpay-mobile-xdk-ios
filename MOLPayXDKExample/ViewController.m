@@ -61,6 +61,8 @@
                                           //@"mp_filter": @"", // Optional for debit card transactions only
                                           //@"mp_custom_css_url": [[NSBundle mainBundle] pathForResource:@"custom.css" ofType:nil], // Optional for custom UI
                                           //@"mp_is_recurring": [NSNumber numberWithBool:NO] // Optional, set true to process this transaction through the recurring api, please refer the MOLPay Recurring API pdf
+                                          //@"mp_allowed_channels": [NSArray arrayWithObjects:@"credit", @"credit3", nil] // Optional for channels restriction
+                                          //@"mp_sandbox_mode": [NSNumber numberWithBool:YES] // Optional for sandboxed development environment, set boolean value to enable. 
                                           };
     
     mp = [[MOLPayLib alloc] initWithDelegate:self andPaymentDetails:paymentRequestDict];

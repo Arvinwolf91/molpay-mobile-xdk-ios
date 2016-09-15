@@ -69,7 +69,13 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_tcctype": @"",
     
         // Optional, set true to process this transaction through the recurring api, please refer the MOLPay Recurring API pdf  
-        @"mp_is_recurring": [NSNumber numberWithBool:NO] 
+        @"mp_is_recurring": [NSNumber numberWithBool:NO],
+    
+        // Optional for channels restriction 
+        @"mp_allowed_channels": [NSArray arrayWithObjects:@"credit", @"credit3", nil],
+    
+        // Optional for sandboxed development environment, set boolean value to enable. 
+        @"mp_sandbox_mode": [NSNumber numberWithBool:YES]
     };
 
 ## Start the payment module
