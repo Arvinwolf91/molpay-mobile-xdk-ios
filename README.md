@@ -30,6 +30,8 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
     
     Step 6 - Add 'NSPhotoLibraryUsageDescription' > 'Payment images' to the application project info.plist
 
+    Step 7 - Add 'NSPhotoLibraryAddUsageDescription' > 'Payment images' to the application project info.plist
+
 ### For Swift
     
     Step 1 - Drag and drop MOLPayXDK.bundle and MOLPayXDK.framework into the application project folder to perform all imports. Please copy both files into the project.
@@ -46,6 +48,8 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
     Step 6 - Add 'App Transport Security Settings > Allow Arbitrary Loads > YES' to the application project info.plist
     
     Step 7 - Add 'NSPhotoLibraryUsageDescription' > 'Payment images' to the application project info.plist
+
+    Step 8 - Add 'NSPhotoLibraryAddUsageDescription' > 'Payment images' to the application project info.plist
 
 ## Prepare the Payment detail object
 
