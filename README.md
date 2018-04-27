@@ -2,6 +2,8 @@
 # license: Copyright © 2011-2016 MOLPay Sdn Bhd. All Rights Reserved. 
 -->
 
+<img src="https://user-images.githubusercontent.com/38641542/39353138-654385dc-4a39-11e8-9710-19e5f03ec62e.jpg">
+
 # molpay-mobile-xdk-ios
 
 This is the complete and functional MOLPay iOS payment module that is ready to be implemented into Xcode (V7+ recommended) application project as a MOLPayXDK framework. An example application project (MOLPayXDKExample.xcodeproj) is provided for MOLPayXDK framework integration reference.
