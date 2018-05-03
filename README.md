@@ -6,9 +6,9 @@
 
 # molpay-mobile-xdk-ios
 
-This is the complete and functional MOLPay iOS payment module that is ready to be implemented into Xcode (V7+ recommended) application project as a MOLPayXDK framework. An example application project (MOLPayXDKExample.xcodeproj) is provided for MOLPayXDK framework integration reference.
+This is the complete and functional MOLPay iOS payment module that is ready to be implemented into Xcode application project as a MOLPayXDK framework. An example application project (MOLPayXDKExample.xcodeproj) is provided for MOLPayXDK framework integration reference.
 
-这是一个完整和实用的MOLPay iOS支付模块，可以实现到Xcode（推荐V7+）以作为一个MOLPayXDK框架。在此提供了一个示例应用程序项目（MOLPayXDKExample.xcodeproj）以作为MOLPayXDK框架整合的参考。
+这是一个完整和实用的 MOLPay iOS 支付模块，可以实现到 Xcode 以作为一个 MOLPayXDK 框架。在此提供了一个示例应用程序项目（MOLPayXDKExample.xcodeproj）以作为 MOLPayXDK 框架整合的参考。
 
 ## Recommended configurations
 
