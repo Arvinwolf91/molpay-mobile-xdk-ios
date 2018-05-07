@@ -32,11 +32,11 @@ class ViewController: UIViewController, MOLPayLibDelegate {
             "mp_amount": "1.10",
             
             // Mandatory String. Values obtained from MOLPay
-            "mp_username": "username",
-            "mp_password": "password",
-            "mp_merchant_ID": "merchantid",
-            "mp_app_name": "appname",
-            "mp_verification_key": "vkey123",
+            "mp_username": "molpayxdk",
+            "mp_password": "cT54#Lk@22",
+            "mp_merchant_ID": "molpayxdk",
+            "mp_app_name": "molpayxdk",
+            "mp_verification_key": "4445db44bdb60687a8e7f7903a59c3a9",
             
             // Mandatory String. Payment values
             "mp_order_ID": "orderid123",
