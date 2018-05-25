@@ -8,19 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController, MOLPayLibDelegate {
+class ViewController: UIViewController {
+    
     var isPaymentInstructionPresent: Bool = false
     var isCloseButtonClick: Bool = false
     var mp = MOLPayLib()
     
-    @IBAction func closemolpay(sender: UIBarButtonItem) {
-        // Closes MOLPay
-        self.mp.closemolpay()
-        isCloseButtonClick = true
-        print("---Close: \(NSNumber.init(booleanLiteral: true))")
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            title: "Pay now",
+            style: .plain,
+            target: self,
+            action: #selector(self.startMOLPay(sender:)))
     }
     
-    @IBAction func startmolpay(sender: UIBarButtonItem) {
+    @IBAction func startMOLPay(sender: UIBarButtonItem) {
         
         // Default setting for Cash channel payment result conditions
         self.isPaymentInstructionPresent = false
@@ -114,7 +118,7 @@ class ViewController: UIViewController, MOLPayLibDelegate {
             title: "Close",
             style: .plain,
             target: self,
-            action: #selector(self.closemolpay)
+            action: #selector(self.closeMOLPay)
         )
         self.mp.navigationItem.hidesBackButton = true
         
@@ -131,22 +135,18 @@ class ViewController: UIViewController, MOLPayLibDelegate {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
-            title: "Pay now",
-            style: .plain,
-            target: self,
-            action: #selector(self.startmolpay(sender:))
-        )
+    @IBAction func closeMOLPay(sender: UIBarButtonItem) {
+        self.mp.closemolpay()
+        isCloseButtonClick = true
+        print("---Close: \(NSNumber.init(booleanLiteral: true))")
     }
+}
+
+extension ViewController: MOLPayLibDelegate {
     
-    // @MOLPayLibDelegates
     func transactionResult(_ result: [AnyHashable: Any]!) {
-        // Payment status results returned here
+        // Payment result
         print("transactionResult result = \(result)")
     }
-
 }
 
